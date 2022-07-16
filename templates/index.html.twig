@@ -1,0 +1,229 @@
+{% extends 'app/layout.html.twig' %}
+
+{% block content %}
+
+    <section class="section section1">
+        <div class="inner">
+            
+            <header>
+                <h1>Luc Pinelli - L'informatique avec vous, à domicile</h1>
+                <p>Vous avez besoin d’une aide, d’une formation ou d’une mise à jour de votre matériel.</p>
+                <p>Vous devez remplacer votre téléphone et mettre en place un forfait qui vous correspond.</p>
+                <p>Vous voulez avoir votre propre site internet pour plus de visibilité.</p>
+
+                <p class="citation">Dans tous les cas je me déplace chez vous et je vous accompagne dans<br> la résolution de votre problème ou dans la création de votre projet.</p>
+            
+                <div class="headerbuttons">
+                    <button type="button" class="btn" data-nav=".section2">Mes services</button>
+                    <button type="button" class="btn" data-nav=".section5">Me contacter</button>
+                </div>
+            </header>
+
+            <div class="illustration">
+                <img src="{{ asset('img/Illustration-header.png')}}" alt="Ordinateur et logo Pinelli Luc">
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section section2">
+        <div class="inner">
+
+            <div class="titreCenter">
+                <h2>Mes services</h2>
+                <p>Besoin d'aide ? consultez la liste de mes services</p>
+            </div>
+
+            <div class="serviceListe">
+                <div class="service">
+                    <div class="serviceIcon"><img src="{{ asset('img/formation.svg')}}" alt="Formation"></div>
+                    <div class="serviceContent">
+                        <h3>La formation</h3>
+                        <p>Une formation qui correspond à votre niveau. Et si nécessaire je vous accompagne avec une vidéo YouTube pour avancer à votre rythme.</p>
+                    </div>
+                </div>
+                <div class="service">
+                    <div class="serviceIcon"><img src="{{ asset('img/diagnostic.svg')}}" alt="Diagnostic / intervention"></div>
+                    <div class="serviceContent">
+                        <h3>Diagnostic / intervention</h3>
+                        <p>Votre ordinateur est lent ou ne vous répond plus, un souci d’imprimante, un logiciel ? Vous avez besoin de vous équiper d’un ordinateur qui répond à vos besoins ? Vous souhaitez augmenter la puissance de votre ordinateur ?</p>
+                    </div>
+                </div>
+                <div class="service">
+                    <div class="serviceIcon"><img src="{{ asset('img/telephonie.svg')}}" alt="Téléphonie"></div>
+                    <div class="serviceContent">
+                        <h3>Téléphonie</h3>
+                        <p>Vous souhaitez changer de téléphone, votre forfait ne vous correspond plus ou vous coûte trop cher ? Il existe des solutions adaptées à chacun.</p>
+                    </div>
+                </div>
+                <div class="service">
+                    <div class="serviceIcon"><img src="{{ asset('img/web.svg')}}" alt="Création de site"></div>
+                    <div class="serviceContent">
+                        <h3>Création de site</h3>
+                        <p>Vous souhaitez avoir votre propre site internet pour présenter votre activité et avoir plus de visibilité, n'hésitez plus.</p>
+                    </div>
+                </div>
+
+                <div class="clear"></div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section section3">
+        <div class="inner">
+
+            <div class="titreCenter">
+                <h2>Mes vidéos</h2>
+                <p>Pour continuer la formation à votre rythme.</p>
+            </div>
+
+            <div class="listevideos">
+
+                <div class="videolarge">
+                    <div class="video">
+                        <div class="videoimg">
+                            <img src="{{ asset('img/video1.jpg')}}" alt="Vidéo mise en avant">
+
+                            <span class="flag">Téléphonie</span>
+
+                            <div class="timer">50:37</div>
+
+                            <div class="play">
+                                <a href="https://www.youtube.com/watch?v=FXM1ZkpMU8A" target="_blank"><img src="{{ asset('img/play.svg')}}" alt="Bouton play"></a>
+                            </div>
+                        </div>
+
+                        <div class="videocontent">
+                            <a href="https://www.youtube.com/watch?v=FXM1ZkpMU8A" target="_blank">Utilisation des bases d'un Iphone</a>
+
+                            <button type="button" data-url="https://www.youtube.com/watch?v=FXM1ZkpMU8A" class="btn">Voir la vidéo <i class="fas fa-angle-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="videosmalle">
+                    <div class="video">
+                        <div class="videoimg">
+                            <img src="{{ asset('img/video2.jpg')}}" alt="Vidéo suivante">
+
+                            <span class="flag">Formation</span>
+
+                            <div class="timer">50:17</div>
+
+                            <div class="play">
+                                <a href="https://www.youtube.com/watch?v=BZfbkzMJ4TA" target="_blank"><img src="{{ asset('img/play.svg')}}" alt="Bouton play"></a>
+                            </div>
+                        </div>
+
+                        <div class="videocontent">
+                            <a href="https://www.youtube.com/watch?v=BZfbkzMJ4TA" target="_blank">Arborescence des dossiers sur Windows</a>
+                            <br/>
+                            <button type="button" data-url="https://www.youtube.com/watch?v=BZfbkzMJ4TA" class="btn">Voir la vidéo <i class="fas fa-angle-right"></i></button>
+                        </div>
+
+                        <div class="clear"></div>
+                    </div>
+                    
+                    <div class="video">
+                        <div class="videoimg">
+                            <img src="{{ asset('img/video3.jpg')}}" alt="Vidéo suivante">
+
+                            <span class="flag">Solution</span>
+
+                            <div class="timer">1:07:02</div>
+
+                            <div class="play">
+                                <a href="https://www.youtube.com/watch?v=GWujZd5twLY" target="_blank"><img src="{{ asset('img/play.svg')}}" alt="Bouton play"></a>
+                            </div>
+                        </div>
+
+                        <div class="videocontent">
+                            <a href="https://www.youtube.com/watch?v=GWujZd5twLY" target="_blank">Google drive et les outils de Gmail</a>
+                            <br/>
+                            <button type="button" data-url="https://www.youtube.com/watch?v=GWujZd5twLY" class="btn">Voir la vidéo <i class="fas fa-angle-right"></i></button>
+                        </div>
+
+                        <div class="clear"></div>
+                    </div>
+                </div>
+
+                <div class="clear"></div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section section4">
+        <div class="inner">
+
+            <div class="facebookcontent">
+                <h2>Suivez-moi sur Facebook</h2>
+                <p>Pour être au courant des dernières actualités</p>
+            </div>
+
+            <div class="facebookbutton">
+                <button type="button" class="btn btnfacebook" data-url="https://www.facebook.com/informatiqueavecvous"><i class="fab fa-facebook-f"></i> Suivre la page Facebook</button>
+            </div>
+
+            <div class="clear"></div>
+
+        </div>
+    </section>
+
+    <section class="section section5">
+        <div class="innerleft">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d181567.75863634425!2d4.5654576!3d44.678856!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x955624a836ca31e8!2sPinelli%20Luc%20-%20L&#39;informatique%20avec%20vous!5e0!3m2!1sfr!2sfr!4v1653932139752!5m2!1sfr!2sfr" width="100%" height="100%" style="border:0; overflow:hidden;height:100%;width:100%" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        
+        <div class="innerright">
+            
+            <div class="titreCenter">
+                <h2>Me contacter</h2>
+                <p>Par email, par téléphone, c'est comme vous voulez.</p>
+            </div>
+
+            <div class="contactinfos">
+                <p><i class="fas fa-phone"></i> 06 50 23 34 97</p>
+                <p><i class="fas fa-envelope"></i> pinelli.luc@outlook.fr</p>
+            </div>
+
+            {{ form_start(form) }}
+
+                {{ form_errors(form) }}
+
+		        <div class="form-error">
+                    {{ form_errors(form.nom) }}
+                </div>
+		        {{ form_widget(form.nom) }}
+
+		        <div class="form-error">
+                    {{ form_errors(form.tel) }}
+                </div>
+		        {{ form_widget(form.tel) }}
+
+		        <div class="form-error">
+                    {{ form_errors(form.email) }}
+                </div>
+		        {{ form_widget(form.email) }}
+
+		        <div class="form-error">
+                    {{ form_errors(form.message) }}
+                </div>
+		        {{ form_widget(form.message) }}
+
+                <div class="formsend">
+                    {{ form_widget(form.Envoyer) }}
+                </div>
+
+                {{ form_rest(form) }}
+
+            {{ form_end(form) }}
+
+        </div>
+
+        <div class="clear"></div>
+    </section>
+
+{% endblock %}

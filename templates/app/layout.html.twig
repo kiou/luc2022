@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>{% block title %} Pinelli Luc - L'informatique avec vous{% endblock %}</title>
+
+    <meta property="og:title" content="Pinelli Luc - L'informatique avec vous">
+    <meta property="og:description" content="Dans tous les cas je me déplace chez vous et je vous accompagne dans la résolution de votre problème ou dans la création de votre projet.">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="{{ asset('img/ogimage.jpg') }} ">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="{{ asset('img/favicon.png') }}">
+
+    <link rel="stylesheet" href="{{ asset('css/reset.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+
+    <script src="https://kit.fontawesome.com/b350f69ae8.js" crossorigin="anonymous"></script>
+    <script src="{{ asset('js/jquery.js') }}"></script>
+    <script src="{{ asset('js/app.js') }}"></script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7B58BHZFCS"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-7B58BHZFCS');
+    </script>
+</head>
+<body>
+    
+    <main class="content">
+        {{ include('include/menu.html.twig') }}
+
+        {% block content %}
+
+        {% endblock %}
+
+        {{ include('include/footer.html.twig') }}
+    </main>
+
+</body>
+</html>

@@ -13,9 +13,7 @@ class GlobalController extends AbstractController
     public function index(Request $request, MailerInterface $mailer)
     {
         $contact = new Contact;
-        $form = $this->createForm(ContactType::class, $contact,[
-            'method' => 'POST'
-        ]);
+        $form = $this->createForm(ContactType::class, $contact);
 
         $form->handleRequest($request);
 

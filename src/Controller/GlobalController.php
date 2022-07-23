@@ -28,6 +28,9 @@ class GlobalController extends AbstractController
 
             $mailer->send($email);
 
+            $request->getSession()->getFlashBag()->add('succes', 'Message envoyé avec succès');
+            return $this->redirect($this->generateUrl('app_index'));
+
         }
 
         return $this->render('index.html.twig',[

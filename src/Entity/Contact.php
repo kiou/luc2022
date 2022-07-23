@@ -5,7 +5,6 @@
 
     class Contact{
 
-
         /**
          * @Assert\NotBlank(message="Compléter le champ nom")
          */
